@@ -14,7 +14,7 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/imgs/theme/aug.png' %}" />
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/plugins/slider-range.css" />
     <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
@@ -486,7 +486,7 @@
                                     </div>
                                 </div>
                                 <div class="header-action-icon-2">
-                                    <a href="page-account.html">
+                                    <a href="{% url 'core:dashboard' %}">
                                         <img class="svgInject" alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-user.svg' %}" />
                                     </a>
                                     <a href="{% url 'core:dashboard' %}"><span class="lable ml-0">Account</span></a>
